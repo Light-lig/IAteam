@@ -34,6 +34,7 @@ window.onload = () =>{
     faceapi.nets.ageGenderNet.loadFromUri("/assets/js/weights")
   ]).then(startVideo);
 
+
   video.addEventListener("play",()=>{
     var contenedor = document.getElementById('contenido');
       const canvas = faceapi.createCanvasFromMedia(video);
@@ -43,7 +44,7 @@ window.onload = () =>{
       setInterval(async () => {
           const detections = await faceapi.detectAllFaces(video,
           new faceapi.TinyFaceDetectorOptions())
-          .withFaceLandmarks().withFaceExpressions();
+          .withFaceLandmarks().withFaceExpressions().withAgeAndGender();;
 
           const resizedDetections = faceapi.resizeResults(detections, displaySize);
 
@@ -51,6 +52,18 @@ window.onload = () =>{
           faceapi.draw.drawDetections(canvas, resizedDetections);
           faceapi.draw.drawFaceLandmarks(canvas, resizedDetections);
           faceapi.draw.drawFaceExpressions(canvas, resizedDetections);
+
+          resizedDetections.forEach(result => {
+          const { age, gender, genderProbability } = result;
+          new faceapi.draw.DrawTextField(
+            [
+              `${Math.round(age, 0)} years`,
+              `${gender} (${Math.round(genderProbability)})`
+            ],
+            result.detection.box.bottomRight
+          ).draw(canvas);
+        });
+
       }, 100)
   });
 
