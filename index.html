@@ -198,10 +198,10 @@
             <video id="video"  width="525" height="400"  muted ></video>
           </div>
 
-						<div class="col-lg-6 d-flex flex-column justify-content-center about-content">
+						<div class="col-lg-6 d-flex flex-column justify-content-center about-content" >
 							<div class="section-title">
 								<h2>About Us</h2>
-								<p>
+								<p id="Texto">
 									Sitios Oficiales de las APIS utilizadas en este proyecto
 								</p>
 							</div>
@@ -209,7 +209,7 @@
 							<div class="icon-box" data-aos="fade-up" data-aos-delay="100">
 								<div class="icon"><i class="bx bx-face"></i></div>
 								<h4 class="title"><a href="https://github.com/justadudewhohacks/face-api.js/">face-api.js</a></h4>
-								<p class="description">
+								<p class="description" id="Texto1">
 									API de reconocimiento facial de JavaScript para el navegador y nodejs implementada sobre el núcleo de tensorflow.js (tensorflow / tfjs-core)
 								</p>
 							</div>
@@ -217,7 +217,7 @@
 							<div class="icon-box" data-aos="fade-up" data-aos-delay="100">
 								<div class="icon"><i class="bx bx-map"></i></div>
 								<h4 class="title"><a href="https://leafletjs.com/">Leaflet</a></h4>
-								<p class="description">
+								<p class="description" id="Texto2">
 									Leaflet es la biblioteca JavaScript de código abierto líder para mapas interactivos compatibles con dispositivos móviles. Con un peso de aproximadamente 39 KB de JS, tiene todas las funciones de mapeo que la mayoría de los desarrolladores necesitan.
 								</p>
 							</div>
@@ -225,11 +225,11 @@
 							<div class="icon-box" data-aos="fade-up" data-aos-delay="100">
 								<div class="icon"><i class="bx bx-photo-album"></i></div>
 								<h4 class="title"><a href="https://generated.photos/api">Generated Photos</a></h4>
-								<p class="description">
+								<p class="description" id="Texto3">
 									Las imágenes generadas por IA nunca se han visto mejor, fotos sin derechos de autor de nuestra base de datos lista para producción.
 								</p>
 							</div>
-
+									<button type="button" name="button" id="clickme" class="btn btn-primary">Escuchar</button>
 						</div>
 					</div>
 				</div>
@@ -242,31 +242,33 @@
 					<div class="container">
 
 					  <div class="section-title">
-						<h2>TIPOS DE INTELIGENCIA ARTIFICIAL</h2>
+						<h2 id="titulo">TIPOS DE INTELIGENCIA ARTIFICIAL</h2>
 					  </div>
 
 					  <div class="row no-gutters">
 
 						<div class="col-lg-6 col-md-6 content-item" data-aos="fade-up">
-						  <h4>SISTEMAS QUE PIENSAN COMO HUMANOS</h4>
-						  <p>Automatizan actividades como la toma de decisiones, la resolución de problemas y el aprendizaje. Un ejemplo son las redes neuronales artificiales.</p>
+						  <h4 id="numero1">SISTEMAS QUE PIENSAN COMO HUMANOS</h4>
+						  <p id="numero2">Automatizan actividades como la toma de decisiones, la resolución de problemas y el aprendizaje. Un ejemplo son las redes neuronales artificiales.</p>
 						</div>
 
 						<div class="col-lg-6 col-md-6 content-item" data-aos="fade-up" data-aos-delay="100">
-						  <h4>SISTEMAS QUE ACTÚAN COMO HUMANOS</h4>
-						  <p>Se trata de computadoras que realizan tareas de forma similar a como lo hacen las personas. Es el caso de los robots.</p>
+						  <h4 id="numero3">SISTEMAS QUE ACTÚAN COMO HUMANOS</h4>
+						  <p id="numero4">Se trata de computadoras que realizan tareas de forma similar a como lo hacen las personas. Es el caso de los robots.</p>
 						</div>
 
 						<div class="col-lg-6 col-md-6 content-item" data-aos="fade-up" data-aos-delay="200">
-						  <h4>SISTEMAS QUE PIENSAN RACIONALMENTE</h4>
-						  <p>Intentan emular el pensamiento lógico racional de los humanos, es decir, se investiga cómo lograr que las máquinas puedan percibir, razonar y actuar en consecuencia. Los sistemas expertos se engloban en este grupo.</p>
+						  <h4 id="numero5">SISTEMAS QUE PIENSAN RACIONALMENTE</h4>
+						  <p id="numero6">Intentan emular el pensamiento lógico racional de los humanos, es decir, se investiga cómo lograr que las máquinas puedan percibir, razonar y actuar en consecuencia. Los sistemas expertos se engloban en este grupo.</p>
 						</div>
 
 						<div class="col-lg-6 col-md-6 content-item" data-aos="fade-up" data-aos-delay="300">
-						  <h4>SISTEMAS QUE ACTÚAN RACIONALMENTE</h4>
-						  <p>idealmente, son aquellos que tratan de imitar de manera racional el comportamiento humano, como los agentes inteligentes.</p>
+						  <h4 id="numero7">SISTEMAS QUE ACTÚAN RACIONALMENTE</h4>
+						  <p id="numero8">idealmente, son aquellos que tratan de imitar de manera racional el comportamiento humano, como los agentes inteligentes.</p>
 						</div>
-
+						<div  class="col-lg-12 col-md-12 content-item" data-aos="fade-up" data-aos-delay="300">
+							<button type="button" style="width:100%;" name="button" id="ia" class="btn btn-primary">Escuchar</button>
+						</div>
 					  </div>
 
 					</div>
@@ -356,7 +358,7 @@
 					<div class="container">
 
 					  <div class="section-title">
-						<h2>PRINCIPALES APLICACIONES DE LA INTELIGENCIA ARTIFICIAL</h2>
+						<h2 id="ia1">PRINCIPALES APLICACIONES DE LA INTELIGENCIA ARTIFICIAL</h2>
 					  </div>
 
 					  <div class="row no-gutters">
@@ -364,65 +366,68 @@
 						<div class="col-lg-6 col-md-6 content-item" data-aos="fade-up">
 						  <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
 							<div class="icon"><i class="bx bxs-chat"></i></div>
-							<h4 class="title"><a href="">ASISTENTES PERSONALES VIRTUALES</a></h4>
-							<p class="description">Los bots conversacionales que utilizan IA para comprender más rápido los problemas de los clientes y proporcionar respuestas más eficientes</p>
+							<h4 class="title"><a href="" id="ia2">ASISTENTES PERSONALES VIRTUALES</a></h4>
+							<p class="description" id="ia3">Los bots conversacionales que utilizan IA para comprender más rápido los problemas de los clientes y proporcionar respuestas más eficientes</p>
 						  </div>
 						</div>
 
 						<div class="col-lg-6 col-md-6 content-item" data-aos="fade-up" data-aos-delay="100">
 						  <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
 							<div class="icon"><i class="bx bxs-bank"></i></div>
-							<h4 class="title"><a href="">FINANZAS</a></h4>
-							<p class="description">Las tecnologías inteligentes pueden ayudar a los bancos a detectar el fraude, predecir patrones del mercado y aconsejar operaciones a sus clientes.</p>
+							<h4 class="title"><a href="" id="ia4">FINANZAS</a></h4>
+							<p class="description"id="ia5">Las tecnologías inteligentes pueden ayudar a los bancos a detectar el fraude, predecir patrones del mercado y aconsejar operaciones a sus clientes.</p>
 						  </div>
 						</div>
 
 						<div class="col-lg-6 col-md-6 content-item" data-aos="fade-up" data-aos-delay="200">
 						  <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
 							<div class="icon"><i class="bx bxs-school"></i></div>
-							<h4 class="title"><a href="">EDUCACIÓN</a></h4>
-							<p class="description">Permite saber si un estudiante está a punto de cancelar su registro, sugerir nuevos cursos o crear ofertas personalizadas para optimizar el aprendizaje.</p>
+							<h4 class="title"><a href=""id="ia6">EDUCACIÓN</a></h4>
+							<p class="description" id="ia7">Permite saber si un estudiante está a punto de cancelar su registro, sugerir nuevos cursos o crear ofertas personalizadas para optimizar el aprendizaje.</p>
 						  </div>
 						</div>
 
 						<div class="col-lg-6 col-md-6 content-item" data-aos="fade-up" data-aos-delay="300">
 						  <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
 							<div class="icon"><i class="bx bxs-shopping-bag"></i></div>
-							<h4 class="title"><a href="">COMERCIAL</a></h4>
-							<p class="description">Posibilita hacer pronósticos de ventas y elegir el producto adecuado para recomendárselo al cliente. Empresas como Amazon utilizan robots para identificar si un libro tendrá o no éxito, incluso antes de su lanzamiento</p>
+							<h4 class="title"><a href="" id="ia8">COMERCIAL</a></h4>
+							<p class="description" id="ia9">Posibilita hacer pronósticos de ventas y elegir el producto adecuado para recomendárselo al cliente. Empresas como Amazon utilizan robots para identificar si un libro tendrá o no éxito, incluso antes de su lanzamiento</p>
 						  </div>
 						</div>
 
 						<div class="col-lg-6 col-md-6 content-item" data-aos="fade-up" data-aos-delay="300">
 						  <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
 							<div class="icon"><i class="bx bxs-heart"></i></div>
-							<h4 class="title"><a href="">SALUD</a></h4>
-							<p class="description">Ya existen chatbots que nos preguntan por nuestros síntomas para realizar un diagnóstico. La recolección de datos genera patrones que ayudan a identificar factores genéticos susceptibles de desarrollar una enfermedad.</p>
+							<h4 class="title"><a href="" id="ia10"> SALUD</a></h4>
+							<p class="description" id="ia11">Ya existen chatbots que nos preguntan por nuestros síntomas para realizar un diagnóstico. La recolección de datos genera patrones que ayudan a identificar factores genéticos susceptibles de desarrollar una enfermedad.</p>
 						  </div>
 						</div>
 
 						<div class="col-lg-6 col-md-6 content-item" data-aos="fade-up" data-aos-delay="300">
 						  <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
 							<div class="icon"><i class="bx bxs-car"></i></div>
-							<h4 class="title"><a href="">LOGÍSTICA Y TRANSPORTE</a></h4>
-							<p class="description">Será útil a la hora de evitar colisiones o atascos y también para optimizar el tráfico. Tesla ha desarrollado un sistema gracias al cual, cuando uno de sus coches transita una ruta por primera vez, comparte la información con el resto.</p>
+							<h4 class="title"><a href="" id="ia12">  LOGÍSTICA Y TRANSPORTE</a></h4>
+							<p class="description" id="ia13">Será útil a la hora de evitar colisiones o atascos y también para optimizar el tráfico. Tesla ha desarrollado un sistema gracias al cual, cuando uno de sus coches transita una ruta por primera vez, comparte la información con el resto.</p>
 						  </div>
 						</div>
 
 						<div class="col-lg-6 col-md-6 content-item" data-aos="fade-up" data-aos-delay="300">
 						  <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
 							<div class="icon"><i class="bx bxs-tree"></i></div>
-							<h4 class="title"><a href="">AGRÍCOLAS</a></h4>
-							<p class="description">Plataformas específicas que, por medio de análisis predictivos, mejoran los rendimientos agrícolas y advierten de impactos ambientales adversos.</p>
+							<h4 class="title"><a href="" id="ia14">AGRÍCOLAS</a></h4>
+							<p class="description" id="ia15">Plataformas específicas que, por medio de análisis predictivos, mejoran los rendimientos agrícolas y advierten de impactos ambientales adversos.</p>
 						  </div>
 						</div>
 
 						<div class="col-lg-6 col-md-6 content-item" data-aos="fade-up" data-aos-delay="300">
 						  <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
 							<div class="icon"><i class="bx bxs-thermometer"></i></div>
-							<h4 class="title"><a href="">CLIMÁTICAS</a></h4>
-							<p class="description">Flotas de drones capaces de plantar mil millones de árboles al año para combatir la deforestación, vehículos submarinos no tripulados para detectar fugas en oleoductos, edificios inteligentes diseñados para reducir el consumo energético, etc.</p>
+							<h4 class="title"><a href="" id="ia16">CLIMÁTICAS</a></h4>
+							<p class="description" id="ia17">Flotas de drones capaces de plantar mil millones de árboles al año para combatir la deforestación, vehículos submarinos no tripulados para detectar fugas en oleoductos, edificios inteligentes diseñados para reducir el consumo energético, etc.</p>
 						  </div>
+						</div>
+						<div  class="col-lg-12 col-md-12 content-item" data-aos="fade-up" data-aos-delay="300">
+							<button type="button" style="width:100%;" name="button" id="iaa" class="btn btn-primary">Escuchar</button>
 						</div>
 
 					  </div>
@@ -633,10 +638,10 @@
 					<div class="row">
 						<div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up">
 							<div class="member">
-								<div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt="" /></div>
+								<div class="pic"><img src="assets/img/team/douglas.jpeg" class="img-fluid" alt="" /></div>
 								<div class="member-info">
-									<h4>Walter White</h4>
-									<span>Chief Executive Officer</span>
+									<h4>Douglas Menjivar</h4>
+									<span>Software Developer</span>
 									<div class="social">
 										<a href=""><i class="icofont-twitter"></i></a>
 										<a href=""><i class="icofont-facebook"></i></a>
@@ -1062,5 +1067,6 @@
 
 		<!-- Template Main JS File -->
 		<script src="assets/js/main.js"></script>
+		<script src="assets/js/speach.js" charset="utf-8"></script>
 	</body>
 </html>
