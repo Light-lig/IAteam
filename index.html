@@ -48,6 +48,9 @@
     <script src="./assets/js/face-api.js" type="text/javascript"></script>
     <script src="./assets/js/appFace.js" type="text/javascript"></script>
     <link  href="./assets/css/estilosFaceApi.css" rel="stylesheet" type="text/css"/>
+		<link href="./assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="./assets/css/floating-wpp.min.css"/>
+
 
 		<!-- Template Main CSS File -->
 		<link href="assets/css/style.css" rel="stylesheet" />
@@ -980,6 +983,32 @@
 					</div>
 				</div>
 			</div>
+			<!--Div where the WhatsApp will be rendered-->
+			<div id="WAButton"></div>
+
+			<div id="fb-root"></div>
+				<script>
+					window.fbAsyncInit = function() {
+						FB.init({
+							xfbml            : true,
+							version          : 'v9.0'
+						});
+					};
+
+					(function(d, s, id) {
+					var js, fjs = d.getElementsByTagName(s)[0];
+					if (d.getElementById(id)) return;
+					js = d.createElement(s); js.id = id;
+					js.src = 'https://connect.facebook.net/es_ES/sdk/xfbml.customerchat.js';
+					fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));</script>
+
+				<div class="fb-customerchat"
+					 attribution=setup_tool
+					 page_id="101923661754687"
+				logged_in_greeting="Bienvenido a IA TEAM"
+				logged_out_greeting="Bienvenido a IA TEAM">
+				 </div>
 
 			<div class="container">
 				<div class="copyright">
@@ -1008,6 +1037,20 @@
 		<script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
 		<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 		<script src="assets/vendor/aos/aos.js"></script>
+		<script type="text/javascript" src="./assets/js/floating-wpp.min.js"></script>
+		<script type="text/javascript">
+				 $(function () {
+								 $('#WAButton').floatingWhatsApp({
+										 phone: '74575632', //WhatsApp Business phone number
+										 headerTitle: 'Chat with us on WhatsApp!', //Popup Title
+										 popupMessage: 'Hello, how can we help you?', //Popup Message
+										 showPopup: true, //Enables popup display
+										 buttonImage: '<img src="Whatsapp.svg" />', //Button Image
+										 position: "left"
+
+								 });
+						 });
+			</script>
 
 		<!-- API MAP JS -->
 		<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"

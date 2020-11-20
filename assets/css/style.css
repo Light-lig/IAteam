@@ -1884,3 +1884,7 @@ textarea:focus {
 	height: 320px;
 	background-color: #103453;
 }
+
+#WAButton{
+	margin-bottom: 20px;
+}
