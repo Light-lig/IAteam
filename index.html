@@ -13,7 +13,7 @@
 		<meta content="inteligencia artificial, iateam, aguacate, potatxio, arroz blanco" name="keywords" />
 		<meta name="author" content="William Vasquez" />
 		<meta name="author" content="Pedro Perez" />
-		<meta name="author" content="Darth Vader" />
+		<meta name="author" content="Oscar Caceres" />
 		<meta name="author" content="Master Yoda" />
 		<meta http-equiv="date" content="Monday, 16-Nov-20 20:15:00 GMT" />
 
@@ -45,6 +45,9 @@
 		<link href="assets/vendor/venobox/venobox.css" rel="stylesheet" />
 		<link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet" />
 		<link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <script src="./assets/js/face-api.js" type="text/javascript"></script>
+    <script src="./assets/js/appFace.js" type="text/javascript"></script>
+    <link  href="./assets/css/estilosFaceApi.css" rel="stylesheet" type="text/css"/>
 
 		<!-- Template Main CSS File -->
 		<link href="assets/css/style.css" rel="stylesheet" />
@@ -124,6 +127,7 @@
 		<!-- End Header -->
 
 		<!-- ======= Hero Section ======= -->
+
   <section id="hero">
     <div class="hero-container">
       <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
@@ -185,15 +189,11 @@
 			<section id="about" class="about">
 				<div class="container">
 					<div class="row no-gutters">
-						<div class="col-lg-6 video-box">
-							<img src="assets/img/about.jpg" class="img-fluid" alt="" />
-							<a
-								href="https://www.youtube.com/watch?v=jDDaplaOz7Q"
-								class="venobox play-btn mb-4"
-								data-vbtype="video"
-								data-autoplay="true"
-							></a>
-						</div>
+          <div class="col-lg-6 video-box" id="contenido" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/reconocimiento.jpg" class="img-fluid" alt="" id="aboutImg">
+            <button class="play-btn mb-4" id="comenzar"></button>
+            <video id="video"  width="525" height="400"  muted ></video>
+          </div>
 
 						<div class="col-lg-6 d-flex flex-column justify-content-center about-content">
 							<div class="section-title">
