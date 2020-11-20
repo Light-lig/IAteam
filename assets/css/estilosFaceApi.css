@@ -3,6 +3,8 @@
 }
 video{
   width: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 #contenido{
   margin:0;
@@ -27,7 +29,7 @@ canvas {
   video {
     width: 100%;
     height: 300px;
-    margin: 20px;
+    margin-top:20px;
   }
   canvas{
     width: 100%;
