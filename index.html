@@ -1,106 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+		<title>IAteam</title>
 
-  <title>Mamba Bootstrap Template - Index</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+		<!-- Seo -->
+		<meta name="application-name" content="IAteam" />
+		<meta content="Informacion sobre inteligencia artificial" name="description" />
+		<meta content="inteligencia artificial, iateam, aguacate, potatxio, arroz blanco" name="keywords" />
+		<meta name="author" content="William Vasquez" />
+		<meta name="author" content="Pedro Perez" />
+		<meta name="author" content="Oscar Caceres" />
+		<meta name="author" content="Master Yoda" />
+		<meta http-equiv="date" content="Monday, 16-Nov-20 20:15:00 GMT" />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+		<!-- Favicon -->
+		<link href="assets/img/ia.svg" rel="icon" sizes="any" />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
+		<!-- Google Fonts -->
+		<link
+			href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900"
+			rel="stylesheet"
+		/>
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+		<!-- API Map CSS -->
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+		integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+		crossorigin=""/>
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+		<!-- Plugin Map CSS -->
+		<link rel="stylesheet" href="assets/css/Control.FullScreen.css">
 
-  <script src="./assets/js/face-api.js" type="text/javascript"></script>
-  <script src="./assets/js/appFace.js" type="text/javascript"></script>
- <link  href="./assets/css/estilosFaceApi.css" rel="stylesheet" type="text/css"/>
+		<!-- Vendor CSS Files -->
+		<link rel="stylesheet" href="assets/vendor/emoji/emoji.css" />
+		<link rel="stylesheet" href="assets/vendor/alertify/css/alertify.min.css" />
+		<link rel="stylesheet" href="assets/vendor/alertify/css/default.min.css" />
+		<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
+		<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+		<link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
+		<link href="assets/vendor/venobox/venobox.css" rel="stylesheet" />
+		<link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet" />
+		<link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <script src="./assets/js/face-api.js" type="text/javascript"></script>
+    <script src="./assets/js/appFace.js" type="text/javascript"></script>
+    <link  href="./assets/css/estilosFaceApi.css" rel="stylesheet" type="text/css"/>
 
-  <!-- =======================================================
-  * Template Name: Mamba - v2.4.1
-  * Template URL: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
+		<!-- Template Main CSS File -->
+		<link href="assets/css/style.css" rel="stylesheet" />
 
-<body>
+		<!-- =======================================================
+		* Template Name: IAteam - v1.4
+		* Template URL: en tu corazón
+		* Authors: insert name ,William Vásquez, Pedro Pérez, Douglas Menjivar
+		* License: Prohibido copia y venta del mismo en caso de hacer uso del código dar crédito a los programadores.
+		======================================================== -->
+	</head>
 
-  <!-- ======= Top Bar ======= -->
-  <section id="topbar" class="d-none d-lg-block">
-    <div class="container clearfix">
-      <div class="contact-info float-left">
-        <i class="icofont-envelope"></i><a href="mailto:contact@example.com">contact@example.com</a>
-        <i class="icofont-phone"></i> +1 5589 55488 55
-      </div>
-      <div class="social-links float-right">
-        <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
-        <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
-        <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
-        <a href="#" class="skype"><i class="icofont-skype"></i></a>
-        <a href="#" class="linkedin"><i class="icofont-linkedin"></i></i></a>
-      </div>
-    </div>
-  </section>
+	<body id="app">
+		<!-- ======= Top Bar ======= -->
+		<section id="topbar" class="d-none d-lg-block">
+			<div class="container clearfix">
+				<div class="contact-info float-left">
+					<i class="icofont-envelope"></i><a href="mailto:contact@example.com">iateam.proyecto@gmail.com</a>
+					<i class="icofont-phone"></i> (503) 2132-7400
+				</div>
+				<div class="social-links float-right">
+					<a href="https://twitter.com/intelig41109767" class="twitter"><i class="bx bxl-twitter"></i></a>
+					<a href="https://www.facebook.com/people/Inteligencia-Artificial/100058119421861" class="facebook"><i class="bx bxl-facebook"></i></a>
+					<a href="https://www.instagram.com/iateam.proyecto" class="instagram"><i class="bx bxl-instagram"></i></a>
+				</div>
+			</div>
+		</section>
 
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="container">
+		<!-- ======= Header ======= -->
+		<header id="header">
+			<div class="container">
+				<div class="logo float-left">
+					<h1 class="text-light">
+						<a href="index.html">
+							<img src="assets/img/ia.svg" alt="ia" class="ia" />
+							<span class="font-weight-bold text-uppercase">ia</span><span class="text-uppercase">team</span>
+						</a>
+					</h1>
+				</div>
+				<nav class="nav-menu float-right d-none d-lg-block">
+					<ul>
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="#about">About Us</a></li>
+						<li><a href="#services">IA Web</a></li>
+						<li><a href="#portfolio">Proyectos</a></li>
+						<li><a href="#team">Team</a></li>
+						<li><a href="#contact">Contact Us</a></li>
+						<li class="drop-down">
+							<a><span id="user" class="mr-1"></span><i class="icofont-gear-alt"></i></a>
+							<ul class="oscuro">
+								<li class="mb-1 d-flex justify-content-around align-items-center">
+									<button class="switch" type="button">
+										<span><i class="icofont-sun"></i></span>
+										<span><i class="icofont-moon"></i></span>
+									</button>
+									<span id="logout"><i class="icofont-logout"></i></span>
+								</li>
+								<!--<li class="drop-down"><a href="#">Drop Down 2</a>
+					<ul>
+					<li><a href="#">Deep Drop Down 1</a></li>
+					<li><a href="#">Deep Drop Down 2</a></li>
+					<li><a href="#">Deep Drop Down 3</a></li>
+					<li><a href="#">Deep Drop Down 4</a></li>
+					<li><a href="#">Deep Drop Down 5</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Drop Down 3</a></li>
+				<li><a href="#">Drop Down 4</a></li>
+				<li><a href="#">Drop Down 5</a></li>-->
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<!-- .nav-menu -->
+			</div>
+		</header>
+		<!-- End Header -->
 
-      <div class="logo float-left">
-        <h1 class="text-light"><a href="index.html"><span>Mamba</span></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-      </div>
+		<!-- ======= Hero Section ======= -->
 
-      <nav class="nav-menu float-right d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li class="drop-down"><a href="">Drop Down</a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="drop-down"><a href="#">Drop Down 2</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-              <li><a href="#">Drop Down 5</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact Us</a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
-
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div class="hero-container">
       <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
@@ -110,34 +137,34 @@
         <div class="carousel-inner" role="listbox">
 
           <!-- Slide 1 -->
-          <div class="carousel-item active" style="background-image: url('assets/img/slide/slide-1.jpg');">
+          <div class="carousel-item active" style="background-image: url('assets/img/slide/slide-1-IA.jpg');">
             <div class="carousel-container">
               <div class="carousel-content container">
-                <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Mamba</span></h2>
-                <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+                <h2 class="animate__animated animate__fadeInDown">¿QUÉ ES LA <span>INTELIGENCIA ARTIFICIAL</span>?</h2>
+                <p class="animate__animated animate__fadeInUp">La inteligencia artificial (IA) es el campo de la ciencia informática dedicado a la resolución de problemas cognitivos asociados comúnmente con la inteligencia humana, como el aprendizaje, la resolución de problemas y el reconocimiento de patrones.</p>
+                <a href="https://es.wikipedia.org/wiki/Inteligencia_artificiall" class="btn-get-started animate__animated animate__fadeInUp scrollto">Leer más</a>
               </div>
             </div>
           </div>
 
           <!-- Slide 2 -->
-          <div class="carousel-item" style="background-image: url('assets/img/slide/slide-2.jpg');">
+          <div class="carousel-item" style="background-image: url('assets/img/slide/slide-2-OpenIA.jpg');">
             <div class="carousel-container">
               <div class="carousel-content container">
-                <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
-                <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+                <h2 class="animate__animated animate__fadeInDown">OpenAI GPT-3</h2>
+                <p class="animate__animated animate__fadeInUp">GPT-3, el nuevo modelo de lenguaje de OpenAI, es capaz de programar, diseñar y hasta conversar sobre política o economía</p>
+                <a href="https://es.wikipedia.org/wiki/GPT-3" class="btn-get-started animate__animated animate__fadeInUp scrollto">Leer más</a>
               </div>
             </div>
           </div>
 
           <!-- Slide 3 -->
-          <div class="carousel-item" style="background-image: url('assets/img/slide/slide-3.jpg');">
+          <div class="carousel-item" style="background-image: url('assets/img/slide/slide-3-Neuralink.jpg');">
             <div class="carousel-container">
               <div class="carousel-content container">
-                <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
-                <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+                <h2 class="animate__animated animate__fadeInDown">NeuraLink</h2>
+                <p class="animate__animated animate__fadeInUp">¿Te imaginas poder guardar tus recuerdos en una computadora, directamente desde tu cerebro, y volverlos a ver cuando quieras? ¿O incluso "descargarlos" en otro cuerpo?</p>
+                <a href="https://es.wikipedia.org/wiki/Neuralink" class="btn-get-started animate__animated animate__fadeInUp scrollto">Leer más</a>
               </div>
             </div>
           </div>
@@ -157,628 +184,840 @@
     </div>
   </section><!-- End Hero -->
 
-  <main id="main">
-
-    <!-- ======= About Us Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
-
-        <div class="row no-gutters">
+		<main id="main">
+			<!-- ======= About Us Section ======= -->
+			<section id="about" class="about">
+				<div class="container">
+					<div class="row no-gutters">
           <div class="col-lg-6 video-box" id="contenido" data-aos="fade-up" data-aos-delay="100">
-                  <img src="assets/img/reconocimiento.jpg" class="img-fluid" alt="" id="aboutImg">
-                  <button class="play-btn mb-4" id="comenzar"></button>
-                  <video id="video"  width="525" height="400"  muted ></video>
+            <img src="assets/img/reconocimiento.jpg" class="img-fluid" alt="" id="aboutImg">
+            <button class="play-btn mb-4" id="comenzar"></button>
+            <video id="video"  width="525" height="400"  muted ></video>
           </div>
 
-          <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
-
-            <div class="section-title">
-              <h2>About Us</h2>
-              <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>
-            </div>
-
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bx bx-fingerprint"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-            </div>
-
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bx bx-gift"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Us Section -->
-
-    <!-- ======= About Lists Section ======= -->
-    <section class="about-lists">
-      <div class="container">
-
-        <div class="row no-gutters">
-
-          <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up">
-            <span>01</span>
-            <h4>Lorem Ipsum</h4>
-            <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up" data-aos-delay="100">
-            <span>02</span>
-            <h4>Repellat Nihil</h4>
-            <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up" data-aos-delay="200">
-            <span>03</span>
-            <h4> Ad ad velit qui</h4>
-            <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up" data-aos-delay="300">
-            <span>04</span>
-            <h4>Repellendus molestiae</h4>
-            <p>Inventore quo sint a sint rerum. Distinctio blanditiis deserunt quod soluta quod nam mider lando casa</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up" data-aos-delay="400">
-            <span>05</span>
-            <h4>Sapiente Magnam</h4>
-            <p>Vitae dolorem in deleniti ipsum omnis tempore voluptatem. Qui possimus est repellendus est quibusdam</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up" data-aos-delay="500">
-            <span>06</span>
-            <h4>Facilis Impedit</h4>
-            <p>Quis eum numquam veniam ea voluptatibus voluptas. Excepturi aut nostrum repudiandae voluptatibus corporis sequi</p>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End About Lists Section -->
-
-    <!-- ======= Counts Section ======= -->
-    <section class="counts section-bg">
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up">
-            <div class="count-box">
-              <i class="icofont-simple-smile" style="color: #20b38e;"></i>
-              <span data-toggle="counter-up">232</span>
-              <p>Happy Clients</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="count-box">
-              <i class="icofont-document-folder" style="color: #c042ff;"></i>
-              <span data-toggle="counter-up">521</span>
-              <p>Projects</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="400">
-            <div class="count-box">
-              <i class="icofont-live-support" style="color: #46d1ff;"></i>
-              <span data-toggle="counter-up">1,463</span>
-              <p>Hours Of Support</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="600">
-            <div class="count-box">
-              <i class="icofont-users-alt-5" style="color: #ffb459;"></i>
-              <span data-toggle="counter-up">15</span>
-              <p>Hard Workers</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Counts Section -->
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Services</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-            <div class="icon"><i class="icofont-computer"></i></div>
-            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><i class="icofont-chart-bar-graph"></i></div>
-            <h4 class="title"><a href="">Dolor Sitema</a></h4>
-            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon"><i class="icofont-earth"></i></div>
-            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon"><i class="icofont-image"></i></div>
-            <h4 class="title"><a href="">Magni Dolores</a></h4>
-            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon"><i class="icofont-settings"></i></div>
-            <h4 class="title"><a href="">Nemo Enim</a></h4>
-            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon"><i class="icofont-tasks-alt"></i></div>
-            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
-            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Services Section -->
-
-    <!-- ======= Our Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="section-title">
-          <h2>Our Portfolio</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-12">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="icofont-eye"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="icofont-external-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="icofont-eye"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="icofont-external-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="icofont-eye"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="icofont-external-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 2</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="icofont-eye"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="icofont-external-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 2</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="icofont-eye"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="icofont-external-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="icofont-eye"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="icofont-external-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 1</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="icofont-eye"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="icofont-external-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 3</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox" title="Card 3"><i class="icofont-eye"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="icofont-external-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="icofont-eye"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="icofont-external-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Our Portfolio Section -->
-
-    <!-- ======= Our Team Section ======= -->
-    <section id="team" class="team">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Our Team</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up">
-            <div class="member">
-              <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="member">
-              <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Oscar Caceres</h4>
-                <span>CTO</span>
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="member">
-              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Our Team Section -->
-
-    <!-- ======= Frequently Asked Questions Section ======= -->
-    <section id="faq" class="faq section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Frequently Asked Questions</h2>
-        </div>
-
-        <div class="row  d-flex align-items-stretch">
-
-          <div class="col-lg-6 faq-item" data-aos="fade-up">
-            <h4>Non consectetur a erat nam at lectus urna duis?</h4>
-            <p>
-              Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-            </p>
-          </div>
-
-          <div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="100">
-            <h4>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h4>
-            <p>
-              Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
-            </p>
-          </div>
-
-          <div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="200">
-            <h4>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?</h4>
-            <p>
-              Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus.
-            </p>
-          </div>
-
-          <div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="300">
-            <h4>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h4>
-            <p>
-              Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
-            </p>
-          </div>
-
-          <div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="400">
-            <h4>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h4>
-            <p>
-              Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
-            </p>
-          </div>
-
-          <div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="500">
-            <h4>Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor?</h4>
-            <p>
-              Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
-            </p>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Frequently Asked Questions Section -->
-
-    <!-- ======= Contact Us Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Contact Us</h2>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-6 d-flex align-items-stretch" data-aos="fade-up">
-            <div class="info-box">
-              <i class="bx bx-map"></i>
-              <h3>Our Address</h3>
-              <p>A108 Adam Street, New York, NY 535022</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="info-box">
-              <i class="bx bx-envelope"></i>
-              <h3>Email Us</h3>
-              <p>info@example.com<br>contact@example.com</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="info-box ">
-              <i class="bx bx-phone-call"></i>
-              <h3>Call Us</h3>
-              <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
-            </div>
-          </div>
-
-          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="300">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="form-row">
-                <div class="col-lg-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validate"></div>
-                </div>
-                <div class="col-lg-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validate"></div>
-                </div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validate"></div>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                <div class="validate"></div>
-              </div>
-              <div class="mb-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Contact Us Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 footer-info">
-            <h3>Mamba</h3>
-            <p>
-              A108 Adam Street <br>
-              NY 535022, USA<br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
-            </p>
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Mamba</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
-
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+						<div class="col-lg-6 d-flex flex-column justify-content-center about-content">
+							<div class="section-title">
+								<h2>About Us</h2>
+								<p>
+									Sitios Oficiales de las APIS utilizadas en este proyecto
+								</p>
+							</div>
+
+							<div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+								<div class="icon"><i class="bx bx-face"></i></div>
+								<h4 class="title"><a href="https://github.com/justadudewhohacks/face-api.js/">face-api.js</a></h4>
+								<p class="description">
+									API de reconocimiento facial de JavaScript para el navegador y nodejs implementada sobre el núcleo de tensorflow.js (tensorflow / tfjs-core)
+								</p>
+							</div>
+
+							<div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+								<div class="icon"><i class="bx bx-map"></i></div>
+								<h4 class="title"><a href="https://leafletjs.com/">Leaflet</a></h4>
+								<p class="description">
+									Leaflet es la biblioteca JavaScript de código abierto líder para mapas interactivos compatibles con dispositivos móviles. Con un peso de aproximadamente 39 KB de JS, tiene todas las funciones de mapeo que la mayoría de los desarrolladores necesitan.
+								</p>
+							</div>
+
+							<div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+								<div class="icon"><i class="bx bx-photo-album"></i></div>
+								<h4 class="title"><a href="https://generated.photos/api">Generated Photos</a></h4>
+								<p class="description">
+									Las imágenes generadas por IA nunca se han visto mejor, fotos sin derechos de autor de nuestra base de datos lista para producción.
+								</p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End About Us Section -->
+
+			<!-- ======= About Lists Section ======= -->
+			    <!-- ======= About Lists Section ======= -->
+				<section id="about" class="about-lists">
+					<div class="container">
+
+					  <div class="section-title">
+						<h2>TIPOS DE INTELIGENCIA ARTIFICIAL</h2>
+					  </div>
+
+					  <div class="row no-gutters">
+
+						<div class="col-lg-6 col-md-6 content-item" data-aos="fade-up">
+						  <h4>SISTEMAS QUE PIENSAN COMO HUMANOS</h4>
+						  <p>Automatizan actividades como la toma de decisiones, la resolución de problemas y el aprendizaje. Un ejemplo son las redes neuronales artificiales.</p>
+						</div>
+
+						<div class="col-lg-6 col-md-6 content-item" data-aos="fade-up" data-aos-delay="100">
+						  <h4>SISTEMAS QUE ACTÚAN COMO HUMANOS</h4>
+						  <p>Se trata de computadoras que realizan tareas de forma similar a como lo hacen las personas. Es el caso de los robots.</p>
+						</div>
+
+						<div class="col-lg-6 col-md-6 content-item" data-aos="fade-up" data-aos-delay="200">
+						  <h4>SISTEMAS QUE PIENSAN RACIONALMENTE</h4>
+						  <p>Intentan emular el pensamiento lógico racional de los humanos, es decir, se investiga cómo lograr que las máquinas puedan percibir, razonar y actuar en consecuencia. Los sistemas expertos se engloban en este grupo.</p>
+						</div>
+
+						<div class="col-lg-6 col-md-6 content-item" data-aos="fade-up" data-aos-delay="300">
+						  <h4>SISTEMAS QUE ACTÚAN RACIONALMENTE</h4>
+						  <p>idealmente, son aquellos que tratan de imitar de manera racional el comportamiento humano, como los agentes inteligentes.</p>
+						</div>
+
+					  </div>
+
+					</div>
+				  </section><!-- End About Lists Section -->
+
+			<!-- ======= About Us Section ======= -->
+			<section class="services">
+				<div class="container">
+
+					<div class="section-title">
+					<h2>TRES LEYES DE LA ROBÓTICA</h2>
+					</div>
+
+					<div class="row no-gutters">
+
+					<div class="col-lg-4 col-md-12 content-item" data-aos="fade-up">
+						<div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+						<div class="icon"><i class="bx bx-check"></i></div>
+						<h4 class="title">PRIMERA LEY</a></h4>
+						<p class="description">Un robot no hará daño a un ser humano ni, por inacción, permitirá que un ser humano sufra daño.</p>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-12 content-item" data-aos="fade-up" data-aos-delay="100">
+						<div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+						<div class="icon"><i class="bx bx-check"></i></div>
+						<h4 class="title">SEGUNDA LEY</a></h4>
+						<p class="description">Un robot debe cumplir las órdenes dadas por los seres humanos, a excepción de aquellas que entren en conflicto con la primera ley.</p>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-12 content-item" data-aos="fade-up" data-aos-delay="100">
+						<div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+						<div class="icon"><i class="bx bx-check"></i></div>
+						<h4 class="title">TERCERA LEY</a></h4>
+						<p class="description">Un robot debe proteger su propia existencia en la medida en que esta protección no entre en conflicto con la primera o con la segunda ley.​</p>
+						</div>
+					</div>
+
+					</div>
+
+				</div>
+				</section><!-- End About Us Section -->
+
+			<!-- ======= Counts Section ======= -->
+			<!-- <section class="counts section-bg">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-6 text-center" data-aos="fade-up">
+							<div class="count-box">
+								<i class="icofont-simple-smile" style="color: #20b38e"></i>
+								<span data-toggle="counter-up">232</span>
+								<p>Happy Clients</p>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="200">
+							<div class="count-box">
+								<i class="icofont-document-folder" style="color: #c042ff"></i>
+								<span data-toggle="counter-up">521</span>
+								<p>Projects</p>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="400">
+							<div class="count-box">
+								<i class="icofont-live-support" style="color: #46d1ff"></i>
+								<span data-toggle="counter-up">1,463</span>
+								<p>Hours Of Support</p>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="600">
+							<div class="count-box">
+								<i class="icofont-users-alt-5" style="color: #ffb459"></i>
+								<span data-toggle="counter-up">15</span>
+								<p>Hard Workers</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section> -->
+			<!-- End Counts Section -->
+
+			    <!-- ======= About Us Section ======= -->
+				<section class="about">
+					<div class="container">
+
+					  <div class="section-title">
+						<h2>PRINCIPALES APLICACIONES DE LA INTELIGENCIA ARTIFICIAL</h2>
+					  </div>
+
+					  <div class="row no-gutters">
+
+						<div class="col-lg-6 col-md-6 content-item" data-aos="fade-up">
+						  <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+							<div class="icon"><i class="bx bxs-chat"></i></div>
+							<h4 class="title"><a href="">ASISTENTES PERSONALES VIRTUALES</a></h4>
+							<p class="description">Los bots conversacionales que utilizan IA para comprender más rápido los problemas de los clientes y proporcionar respuestas más eficientes</p>
+						  </div>
+						</div>
+
+						<div class="col-lg-6 col-md-6 content-item" data-aos="fade-up" data-aos-delay="100">
+						  <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+							<div class="icon"><i class="bx bxs-bank"></i></div>
+							<h4 class="title"><a href="">FINANZAS</a></h4>
+							<p class="description">Las tecnologías inteligentes pueden ayudar a los bancos a detectar el fraude, predecir patrones del mercado y aconsejar operaciones a sus clientes.</p>
+						  </div>
+						</div>
+
+						<div class="col-lg-6 col-md-6 content-item" data-aos="fade-up" data-aos-delay="200">
+						  <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+							<div class="icon"><i class="bx bxs-school"></i></div>
+							<h4 class="title"><a href="">EDUCACIÓN</a></h4>
+							<p class="description">Permite saber si un estudiante está a punto de cancelar su registro, sugerir nuevos cursos o crear ofertas personalizadas para optimizar el aprendizaje.</p>
+						  </div>
+						</div>
+
+						<div class="col-lg-6 col-md-6 content-item" data-aos="fade-up" data-aos-delay="300">
+						  <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+							<div class="icon"><i class="bx bxs-shopping-bag"></i></div>
+							<h4 class="title"><a href="">COMERCIAL</a></h4>
+							<p class="description">Posibilita hacer pronósticos de ventas y elegir el producto adecuado para recomendárselo al cliente. Empresas como Amazon utilizan robots para identificar si un libro tendrá o no éxito, incluso antes de su lanzamiento</p>
+						  </div>
+						</div>
+
+						<div class="col-lg-6 col-md-6 content-item" data-aos="fade-up" data-aos-delay="300">
+						  <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+							<div class="icon"><i class="bx bxs-heart"></i></div>
+							<h4 class="title"><a href="">SALUD</a></h4>
+							<p class="description">Ya existen chatbots que nos preguntan por nuestros síntomas para realizar un diagnóstico. La recolección de datos genera patrones que ayudan a identificar factores genéticos susceptibles de desarrollar una enfermedad.</p>
+						  </div>
+						</div>
+
+						<div class="col-lg-6 col-md-6 content-item" data-aos="fade-up" data-aos-delay="300">
+						  <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+							<div class="icon"><i class="bx bxs-car"></i></div>
+							<h4 class="title"><a href="">LOGÍSTICA Y TRANSPORTE</a></h4>
+							<p class="description">Será útil a la hora de evitar colisiones o atascos y también para optimizar el tráfico. Tesla ha desarrollado un sistema gracias al cual, cuando uno de sus coches transita una ruta por primera vez, comparte la información con el resto.</p>
+						  </div>
+						</div>
+
+						<div class="col-lg-6 col-md-6 content-item" data-aos="fade-up" data-aos-delay="300">
+						  <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+							<div class="icon"><i class="bx bxs-tree"></i></div>
+							<h4 class="title"><a href="">AGRÍCOLAS</a></h4>
+							<p class="description">Plataformas específicas que, por medio de análisis predictivos, mejoran los rendimientos agrícolas y advierten de impactos ambientales adversos.</p>
+						  </div>
+						</div>
+
+						<div class="col-lg-6 col-md-6 content-item" data-aos="fade-up" data-aos-delay="300">
+						  <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+							<div class="icon"><i class="bx bxs-thermometer"></i></div>
+							<h4 class="title"><a href="">CLIMÁTICAS</a></h4>
+							<p class="description">Flotas de drones capaces de plantar mil millones de árboles al año para combatir la deforestación, vehículos submarinos no tripulados para detectar fugas en oleoductos, edificios inteligentes diseñados para reducir el consumo energético, etc.</p>
+						  </div>
+						</div>
+
+					  </div>
+
+					</div>
+				  </section><!-- End About Us Section -->
+
+			<!-- ======= Services Section ======= -->
+			<section id="services" class="services">
+				<div class="container">
+
+				  <div class="section-title">
+					<h2>INTELIGENCIA ARTIFICIAL PARA EL DISEÑO WEB</h2>
+				  </div>
+
+				  <div class="row">
+
+					<div class="col-lg-6 col-md-12 icon-box" data-aos="fade-up">
+					  <div class="icon"><i class="icofont-paint-brush"></i></div>
+					  <h4 class="title"><a href="">Aumento de la inteligencia de diseño artificial</a></h4>
+					  <p class="description">El creciente campo de la inteligencia de diseño artificial (ADI, por sus siglas inglés) ha propiciado un gran cambio en la manera en que se diseñan páginas web hoy en día. En un entorno tradicional, el proceso para diseñar una interfaz de usuario suele ser abrumador porque requiere de mucha creatividad para crear un espacio único. </p>
+					</div>
+
+					<div class="col-lg-6 col-md-12 icon-box" data-aos="fade-up" data-aos-delay="100">
+					  <div class="icon"><i class="icofont-expressionless"></i></div>
+					  <h4 class="title"><a href="">Mejor experiencia de usuario</a></h4>
+					  <p class="description">La inteligencia artificial ahora dirige varios aspectos clave del diseño web y juega un papel importante en la experiencia de usuario. Con sus últimas intervenciones en el diseño web, los diseñadores son capaces de transformar la portada de cualquier página en una experiencia completa y significativa para los consumidores.</p>
+					</div>
+
+					<div class="col-lg-6 col-md-12 icon-box" data-aos="fade-up" data-aos-delay="200">
+					  <div class="icon"><i class="icofont-interface"></i></div>
+					  <h4 class="title"><a href="">Mejor interfaz de usuario</a></h4>
+					  <p class="description">De manera similar, las interfaces de usuario optimizadas con IA son capaces de tomar decisiones de diseño por su propia cuenta. ¿Cómo funciona? Se tiene que configurar el programa para que comprenda los principios de diseño y pueda observar las páginas actuales de tu web.</p>
+					</div>
+
+					<div class="col-lg-6 col-md-12 icon-box" data-aos="fade-up" data-aos-delay="300">
+					  <div class="icon"><i class="icofont-shopify"></i></div>
+					  <h4 class="title"><a href="">Recomendaciones de productos</a></h4>
+					  <p class="description">La inteligencia artificial también es capaz de generar recomendaciones de productos con el objetivo de influenciar las decisiones de compra. Estas herramientas ofrecen sugerencias cuando los clientes interactúan con una página web y brindan información valiosa según sus búsquedas.</p>
+					</div>
+
+				</div>
+			  </section><!-- End Services Section -->
+
+			<!-- ======= Our Portfolio Section ======= -->
+			<section id="portfolio" class="portfolio section-bg">
+				<div class="container" data-aos="fade-up" data-aos-delay="100">
+
+				  <div class="section-title">
+					<h2 class="text-uppercase">Proyectos</h2>
+					<p>A continuación, se presentan algunas demostraciones de proyectos de inteligencia artificial en la web</p>
+				  </div>
+
+				  <div class="row">
+					<div class="col-lg-12">
+					  <ul id="portfolio-flters">
+						<li data-filter="*" class="filter-active">TODOS</li>
+						<li data-filter=".filter-voz">VOZ</li>
+						<li data-filter=".filter-chat">CHAT</li>
+						<li data-filter=".filter-texto">TEXTO</li>
+					  </ul>
+					</div>
+				  </div>
+
+				  <div class="row portfolio-container">
+
+					<div class="col-lg-4 col-md-6 portfolio-item filter-voz">
+					  <div class="portfolio-wrap">
+						<img src="assets/img/portfolio/proyecto-yio-voz.png" class="img-fluid" alt="proyecto-yio-voz">
+						<div class="portfolio-info">
+						  <h4>ASISTENTE VIRTUAL WEB SOLIA</h4>
+						  <p>Voz</p>
+						  <div class="portfolio-links">
+							<a href="assets/img/portfolio/proyecto-yio-voz.png" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="icofont-eye"></i></a>
+							<a href="https://soliamadrid.com/" title="Sitio Oficial" target="_blank" rel="noopener noreferrer"><i class="icofont-external-link"></i></a>
+						  </div>
+						</div>
+					  </div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 portfolio-item filter-texto">
+					  <div class="portfolio-wrap">
+						<img src="assets/img/portfolio/proyecto-grammarChecker-texto.png" class="img-fluid" alt="proyecto-grammarChecker-texto">
+						<div class="portfolio-info">
+						  <h4>GrammarChecker, analiza el texto para corregir y verificar la gramática y la ortográfica</h4>
+						  <p>Texto</p>
+						  <div class="portfolio-links">
+							<a href="assets/img/portfolio/proyecto-grammarChecker-texto.png" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="icofont-eye"></i></a>
+							<a href="https://www.plagiarism-checker.me/es/grammar-checker" title="Sitio Oficial" target="_blank" rel="noopener noreferrer"><i class="icofont-external-link"></i></a>
+						  </div>
+						</div>
+					  </div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 portfolio-item filter-voz">
+					  <div class="portfolio-wrap">
+						<img src="assets/img/portfolio/proyecto-vocodes-voz.jpg" class="img-fluid" alt="proyecto-vocodes-voz">
+						<div class="portfolio-info">
+						  <h4>Vocodes, una IA que imita voces de actores y famosos</h4>
+						  <p>Voz</p>
+						  <div class="portfolio-links">
+							<a href="assets/img/portfolio/proyecto-vocodes-voz.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="icofont-eye"></i></a>
+							<a href="https://vo.codes/#speak" title="Sitio Oficial" target="_blank" rel="noopener noreferrer"><i class="icofont-external-link"></i></a>
+						  </div>
+						</div>
+					  </div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 portfolio-item filter-chat">
+					  <div class="portfolio-wrap">
+						<img src="assets/img/portfolio/proyecto-hellofresh-chat.png" class="img-fluid" alt="proyecto-hellofresh-chat" width="100%" height="auto">
+						<div class="portfolio-info">
+						  <h4>HelloFresh, es un servicio de entrega semanal de kits de recetas</h4>
+						  <p>CHAT</p>
+						  <div class="portfolio-links">
+							<a href="assets/img/portfolio/proyecto-hellofresh-chat.png" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="icofont-eye"></i></a>
+							<a href="https://chatfuel.com/bot/HelloFreshus" title="Sitio Oficial" target="_blank" rel="noopener noreferrer"><i class="icofont-external-link"></i></a>
+						  </div>
+						</div>
+					  </div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 portfolio-item filter-texto">
+					  <div class="portfolio-wrap">
+						<img src="assets/img/portfolio/proyecto-zyro-texto.png" class="img-fluid" alt="proyecto-zyro-texto">
+						<div class="portfolio-info">
+						  <h4>Zyro, generador de contenido(actualmente solo en ingles)</h4>
+						  <p>Texto</p>
+						  <div class="portfolio-links">
+							<a href="assets/img/portfolio/proyecto-zyro-texto.png" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="icofont-eye"></i></a>
+							<a href="https://zyro.com/es/ia/generador-de-contenido" title="Sitio Oficial" target="_blank" rel="noopener noreferrer"><i class="icofont-external-link"></i></a>
+						  </div>
+						</div>
+					  </div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 portfolio-item filter-voz">
+					  <div class="portfolio-wrap">
+						<img src="assets/img/portfolio/proyecto-readSpeaker-voz.jpg" class="img-fluid" alt="proyecto-readSpeaker-voz">
+						<div class="portfolio-info">
+						  <h4>Voces TTS de ReadSpeaker, reconocido como uno de los más precisos y realistas del mercado</h4>
+						  <p>Voz</p>
+						  <div class="portfolio-links">
+							<a href="assets/img/portfolio/proyecto-readSpeaker-voz.jpg" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="icofont-eye"></i></a>
+							<a href="https://www.readspeaker.com/es/demos/" title="Sitio Oficial" target="_blank" rel="noopener noreferrer"><i class="icofont-external-link"></i></a>
+						  </div>
+						</div>
+					  </div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 portfolio-item filter-chat">
+					  <div class="portfolio-wrap">
+						<img src="assets/img/portfolio/proyecto-snatchBot-chat.png" class="img-fluid" alt="proyecto-snatchBot-chat">
+						<div class="portfolio-info">
+						  <h4>SnatchBot, permite crear chatbots inteligentes para mensajería multicanal</h4>
+						  <p>Chat</p>
+						  <div class="portfolio-links">
+							<a href="assets/img/portfolio/proyecto-snatchBot-chat.png" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="icofont-eye"></i></a>
+							<a href="https://es.snatchbot.me/botstore/template" title="Sitio Oficial" target="_blank" rel="noopener noreferrer"><i class="icofont-external-link"></i></a>
+						  </div>
+						</div>
+					  </div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 portfolio-item filter-chat">
+					  <div class="portfolio-wrap">
+						<img src="assets/img/portfolio/proyecto-rebotme-chat.png" class="img-fluid" alt="proyecto-rebotme-chat">
+						<div class="portfolio-info">
+						  <h4>Rebot.me permite crear chatbots de la manera mas simple</h4>
+						  <p>Chat</p>
+						  <div class="portfolio-links">
+							<a href="assets/img/portfolio/proyecto-rebotme-chat.png" data-gall="portfolioGallery" class="venobox" title="Card 3"><i class="icofont-eye"></i></a>
+							<a href="https://rebot.me" title="Sitio Oficial" target="_blank" rel="noopener noreferrer"><i class="icofont-external-link"></i></a>
+						  </div>
+						</div>
+					  </div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 portfolio-item filter-texto">
+					  <div class="portfolio-wrap">
+						<img src="assets/img/portfolio/proyecto-talktotransformer-texto.png" class="img-fluid" alt="proyecto-talktotransformer-texto">
+						<div class="portfolio-info">
+						  <h4>TalkToTransformer.com, una aplicación web que nos permite hacernos una idea del potencial de esta creación de OpenAI.</h4>
+						  <p>Texto</p>
+						  <div class="portfolio-links">
+							<a href="assets/img/portfolio/proyecto-talktotransformer-texto.png" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="icofont-eye"></i></a>
+							<a href="https://app.inferkit.com/demo" title="Sitio Oficial" target="_blank" rel="noopener noreferrer"><i class="icofont-external-link"></i></a>
+						  </div>
+						</div>
+					  </div>
+					</div>
+
+				  </div>
+
+				</div>
+			  </section><!-- End Our Portfolio Section -->
+
+			<!-- ======= Our Team Section ======= -->
+			<section id="team" class="team">
+				<div class="container">
+					<div class="section-title">
+						<h2 class="text-uppercase">Nuestro Equipo</h2>
+						<p>
+							Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
+						</p>
+					</div>
+
+					<div class="row">
+						<div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up">
+							<div class="member">
+								<div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt="" /></div>
+								<div class="member-info">
+									<h4>Walter White</h4>
+									<span>Chief Executive Officer</span>
+									<div class="social">
+										<a href=""><i class="icofont-twitter"></i></a>
+										<a href=""><i class="icofont-facebook"></i></a>
+										<a href=""><i class="icofont-instagram"></i></a>
+										<a href=""><i class="icofont-linkedin"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+							<div class="member">
+								<div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt="" /></div>
+								<div class="member-info">
+									<h4>Pedro Pérez</h4>
+									<span>Estudiante de Ingeniería <br> en Desarrollo de Software</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+							<div class="member">
+								<div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt="" /></div>
+								<div class="member-info">
+									<h4>William Anderson</h4>
+									<span>CTO</span>
+									<div class="social">
+										<a href=""><i class="icofont-twitter"></i></a>
+										<a href=""><i class="icofont-facebook"></i></a>
+										<a href=""><i class="icofont-instagram"></i></a>
+										<a href=""><i class="icofont-linkedin"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+							<div class="member">
+								<div class="pic">
+									<img src="assets/img/team/team-4.jpg" class="img-fluid" alt="William" />
+								</div>
+								<div class="member-info">
+									<h4>William Vásquez</h4>
+									<span>Programmer Analyst</span>
+									<div class="social">
+										<a href=""><i class="icofont-twitter"></i></a>
+										<a href=""><i class="icofont-facebook"></i></a>
+										<a href=""><i class="icofont-instagram"></i></a>
+										<a href=""><i class="icofont-linkedin"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End Our Team Section -->
+
+			<!-- ======= Frequently Asked Questions Section ======= -->
+			<section id="faq" class="faq section-bg">
+				<div class="container">
+					<div class="section-title">
+						<h2>Demostración de las API'S</h2>
+					</div>
+
+					<div class="row d-flex align-items-stretch">
+						<div class="col-lg-6 faq-item" data-aos="fade-up">
+							<h4>Face-api.js</h4>
+							<p>
+								Explica un poco la API
+							</p>
+						</div>
+
+						<div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="100">
+							<div>
+								<!-- COLOCA LA API-->
+								<div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="100">
+									<div>
+										<img src="assets/img/portfolio/proyecto-hellofresh-chat.png" alt="" width="100%" height="auto">
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-6 faq-item" data-aos="fade-up">
+							<h4>Generated Photos</h4>
+							<p>
+								Las fotos generadas por la IA son imágenes versátiles que se pueden utilizar de forma segura
+								dado que son personas que no existen.
+							</p>
+						</div>
+
+						<div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="100">
+							<div>
+								<img src="assets/img/portfolio/proyecto-hellofresh-chat.png" alt="" width="100%" height="auto">
+							</div>
+						</div>
+						<!-- <div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="100">
+							<img id="imagenGenerada" alt="imagen-generada">
+							<script>
+							async function getFace() {
+								let response = await fetch('https://api.generated.photos/api/v1/faces?per_page=1&gender=female&order_by=random',{
+								method: 'GET',
+								headers: {
+									'Authorization': 'API-Key XJREnllncxACZTxGLMiUsA'
+								}
+								});
+
+								let result = await response.json();
+								document.getElementById("imagenGenerada").src = result.faces[0].urls[4]["512"];
+							}
+							getFace();
+							</script>
+						</div> -->
+
+						<div class="col-lg-6 faq-item" data-aos="fade-up">
+							<h4>Face-api.js</h4>
+							<p>
+								Explica un poco la API
+							</p>
+						</div>
+
+						<div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="100">
+							<div>
+								<img src="assets/img/portfolio/proyecto-hellofresh-chat.png" alt="" width="100%" height="auto">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End Frequently Asked Questions Section -->
+
+			<!-- ======= Contact Us Section ======= -->
+			<section id="contact" class="contact">
+				<div class="container">
+					<div class="section-title">
+						<h2>Contáctanos</h2>
+					</div>
+
+					<div class="row">
+						<div class="col-lg-6 d-flex align-items-stretch" data-aos="fade-up">
+							<div class="info-box">
+								<i class="bx bx-map"></i>
+								<h3>Dirección</h3>
+								<p>Km. 11 Carretera a Santa Tecla</p>
+							</div>
+						</div>
+
+						<div class="col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+							<div class="info-box">
+								<i class="bx bx-envelope"></i>
+								<h3>Email</h3>
+								<p>iateam.proyecto@gmail.com</p>
+							</div>
+						</div>
+
+						<div class="col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+							<div class="info-box">
+								<i class="bx bx-phone-call"></i>
+								<h3>Llamanos</h3>
+								<p>(503) 2132-7400</p>
+							</div>
+						</div>
+
+						<div class="col-lg-12" data-aos="fade-up" data-aos-delay="300">
+							<div id="map"></div>
+						</div>
+
+						<div class="col-lg-12" data-aos="fade-up" data-aos-delay="300">
+							<form action="forms/contact.php" method="post" role="form" class="php-email-form">
+								<div class="form-row">
+									<div class="col-lg-6 form-group">
+										<i class="icofont-user form-control-feedback"></i>
+										<input
+											type="text"
+											name="name"
+											class="form-control"
+											id="name"
+											placeholder="Nombre"
+											data-rule="minlen:4"
+											data-msg="Please enter at least 4 chars"
+										/>
+										<div class="validate"></div>
+									</div>
+									<div class="col-lg-6 form-group">
+										<i class="icofont-ui-email form-control-feedback"></i>
+										<input
+											type="email"
+											class="form-control"
+											name="email"
+											id="email"
+											placeholder="Email"
+											data-rule="email"
+											data-msg="Please enter a valid email"
+										/>
+										<div class="validate"></div>
+									</div>
+								</div>
+								<div class="form-group">
+									<i class="icofont-info form-control-feedback"></i>
+									<input
+										type="text"
+										class="form-control"
+										name="subject"
+										id="subject"
+										placeholder="Asunto"
+										data-rule="minlen:4"
+										data-msg="Please enter at least 8 chars of subject"
+									/>
+									<div class="validate"></div>
+								</div>
+								<div class="form-group">
+									<i class="icofont-send-mail form-control-feedback"></i>
+									<textarea
+										class="form-control"
+										name="message"
+										rows="5"
+										data-rule="required"
+										data-msg="Please write something for us"
+										placeholder="Mensaje"
+									></textarea>
+									<div class="validate"></div>
+								</div>
+								<div class="mb-3">
+									<div class="loading">Loading</div>
+									<div class="error-message"></div>
+									<div class="sent-message">Your message has been sent. Thank you!</div>
+								</div>
+								<div class="text-center">
+									<button id="btnEnviar" type="submit" class="boton btn-primary">Enviar</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End Contact Us Section -->
+		</main>
+		<!-- End #main -->
+		<!-- ======= Modal Login ======= -->
+		<form method="post" id="frmLogin" accept="#">
+			<div
+				class="modal fade"
+				id="modalLoginForm"
+				tabindex="-1"
+				role="dialog"
+				aria-labelledby="myModalLabel"
+				aria-hidden="true"
+			>
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header text-center mb-4">
+							<img
+								src="assets/img/logo.svg"
+								alt="avatar"
+								class="rounded-circle img-responsive d-none d-sm-block d-md-block"
+							/>
+							<h4 class="modal-title w-100 font-weight-bold mt-5">Sign in</h4>
+							<!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>-->
+						</div>
+						<div class="form-row ml-3 mr-3">
+							<div class="form-group has-feedback col-md-12">
+								<i class="icofont-user form-control-feedback"></i>
+								<input
+									type="text"
+									id="txtUsuario"
+									name="txtUsuario"
+									placeholder="Ingresar usuario"
+									tabindex="1"
+									class="form-control letras"
+									autocomplete="off"
+								/>
+							</div>
+							<div class="form-group has-feedback col-md-12" id="mostrarOcultarPass">
+								<i class="icofont-unlock form-control-feedback"></i>
+								<input
+									type="password"
+									id="txtPass"
+									name="txtPass"
+									tabindex="2"
+									placeholder="Ingresar password"
+									class="form-control"
+									autocomplete="off"
+								/>
+								<span
+									><a class="mostrarPass"><i class="icofont-eye-blocked"></i></a
+								></span>
+							</div>
+						</div>
+						<div class="modal-footer d-flex justify-content-center">
+							<button class="btn btn-default boton bg-dark" id="login" type="button">Login</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+		<!-- ======= End Modal Login ======= -->
+		<!-- ======= Footer ======= -->
+		<footer id="footer">
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4 col-md-6 footer-info">
+							<h3>IATEAM</h3>
+							<p>
+								Km. 11 Carretera a Santa Tecla. <br>
+								<strong>Teléfono:</strong> (503) 2132-7400<br />
+								<strong>Email:</strong> iateam.proyecto@gmail.com<br />
+							</p>
+						</div>
+
+<!-- 						<div class="col-lg-2 col-md-6 footer-links">
+							<h4>Navegar</h4>
+							<ul>
+								<li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+								<li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+								<li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+								<li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+								<li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+							</ul>
+						</div> -->
+
+						<div class="col-lg-4 col-md-6 footer-links">
+							<h4>Sitios Oficiales</h4>
+							<ul>
+								<li><i class="bx bx-chevron-right"></i> <a href="https://github.com/justadudewhohacks/face-api.js/">face-api.js</a></li>
+								<li><i class="bx bx-chevron-right"></i> <a href="https://leafletjs.com/">Leaflet</a></li>
+								<li><i class="bx bx-chevron-right"></i> <a href="http://brunob.github.io/leaflet.fullscreen/">leaflet.fullscreen(Plugin)</a></li>
+								<li><i class="bx bx-chevron-right"></i> <a href="https://generated.photos/api">Generated Photos</a></li>
+								<li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+							</ul>
+						</div>
+
+						<div class="col-lg-4 col-md-6 footer-links">
+							<h4>Redes Sociales</h4>
+							<div class="social-links mt-3">
+								<a href="https://twitter.com/intelig41109767" class="twitter"><i class="bx bxl-twitter"></i></a>
+        						<a href="https://www.facebook.com/people/Inteligencia-Artificial/100058119421861" class="facebook"><i class="bx bxl-facebook"></i></a>
+        						<a href="https://www.instagram.com/iateam.proyecto" class="instagram"><i class="bx bxl-instagram"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="copyright">
+					&copy; Copyright <strong><span>IATEAM</span></strong
+					>. Todos los derechos reservados
+				</div>
+				<!-- <div class="credits">Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></div> -->
+			</div>
+		</footer>
+		<!-- End Footer -->
+
+		<a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+		<!-- Vendor JS Files -->
+		<script src="assets/vendor/alertify/js/alertify.min.js"></script>
+		<script src="assets/vendor/sweer-alert/sweetalert2.all.min.js"></script>
+		<script src="assets/vendor/jquery/jquery.min.js"></script>
+		<script src="assets/vendor/jquery validate/jquery.validate.min.js"></script>
+		<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+		<script src="assets/vendor/php-email-form/validate.js"></script>
+		<script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+		<script src="assets/vendor/venobox/venobox.min.js"></script>
+		<script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+		<script src="assets/vendor/counterup/counterup.min.js"></script>
+		<script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+		<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+		<script src="assets/vendor/aos/aos.js"></script>
+
+		<!-- API MAP JS -->
+		<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+		integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+		crossorigin=""></script>
+
+		<!-- Plugin Map JS -->
+		<script src="assets/js/Control.FullScreen.js"></script>
+
+		<!-- Template Main JS File -->
+		<script src="assets/js/main.js"></script>
+	</body>
 </html>
