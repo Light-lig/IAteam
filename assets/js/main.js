@@ -356,7 +356,7 @@
 		$('.switch').removeClass('activo');
 	}
 	//cerrar modal y comprobar login falso
-/* 	$(window).on('load', function () {
+$(window).on('load', function () {
 		if (localStorage.getItem('user') !== null) {
 			$('#user').text(localStorage.getItem('user'));
 			alertify.notify(
@@ -365,10 +365,10 @@
 				2,
 			);
 		} else {
-			// para que no se cierre el modal 
+			// para que no se cierre el modal
 			$('#modalLoginForm').modal({ backdrop: 'static', keyboard: false });
 		}
-	}); */
+	});
 	//maxlenght
 	$('#txtUsuario').on('keypress', function () {
 		if ($(this).val().length >= 10) {
@@ -458,13 +458,13 @@
 
 //Proveedor de tileLayer
 var base = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-			maxZoom: 17,			
+			maxZoom: 17,
 			attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
 });
 
-//Creación del mapa con el proveedor. 
+//Creación del mapa con el proveedor.
 var miMapa= L.map('map', {
-    layers: [base],    
+    layers: [base],
     zoom: 16,
     fullscreenControl: true,
     fullscreenControlOptions: {
@@ -515,7 +515,7 @@ navigator.geolocation.getCurrentPosition(
     {
         enableHighAccuracy: true,
         timeout: 5000,
-		maximumAge: 0		
+		maximumAge: 0
     }
 )
 
