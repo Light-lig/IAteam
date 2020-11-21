@@ -1879,11 +1879,19 @@ textarea:focus {
 }
 /* fin william*/
 
-#map{
+#mapaEmpresas{
 	width: 540;
 	height: 320px;
-	background-color: #103453;
+	
 }
+
+#mapaContactUs{
+	width: 540;
+	height: 320px;
+	
+}
+
+
 
 #WAButton{
 	margin-bottom: 20px;

@@ -226,10 +226,50 @@
 								<div class="icon"><i class="bx bx-photo-album"></i></div>
 								<h4 class="title"><a href="https://generated.photos/api">Generated Photos</a></h4>
 								<p class="description" id="Texto3">
-									Las imágenes generadas por IA nunca se han visto mejor, fotos sin derechos de autor de nuestra base de datos lista para producción.
+									En palabras de sus creadores, Generated Photos pretende democratizar la fotografía creativa y el vídeo. Para ello, un equipo de 20 profesionales formado por ingenieros de IA, fotógrafos, maquilladores y estilistas, etc. han creado una IA que se ofrece como API y que, por el momento, ha logrado generar más de 100.000 caras.
 								</p>
-							</div>
-									<button type="button" name="button" id="clickme" class="btn btn-primary">Escuchar</button>
+								<!-- Button modal -->
+								<div class="d-flex justify-content-center mb-5">
+									<button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal-photos" id="mostrar-photos">
+										Generar foto
+									</button>
+								</div>
+							</div>									
+								<!-- Modal -->
+								<div class="modal fade" id="modal-photos" tabindex="-1" role="dialog" aria-labelledby="modalGeneratedPhotos" aria-hidden="true">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+												<h5 class="modal-title text-uppercase font-weight-bold" id="exampleModalLongTitle">Generated Photos API</h5>												
+												</div>
+												<div class="modal-body">													
+														<img id="imagenGenerada" alt="imagen-generada" class="img-fluid">
+														<script>
+														async function getFace() {
+															let response = await fetch('https://api.generated.photos/api/v1/faces?per_page=1&gender=female&order_by=random',{
+															method: 'GET',
+															headers: {
+																'Authorization': 'API-Key XJREnllncxACZTxGLMiUsA'
+															}
+															});
+
+															let result = await response.json();
+															document.getElementById("imagenGenerada").src = result.faces[0].urls[4]["512"];
+														}
+														getFace();
+														</script>												
+												</div>
+												<div class="modal-footer">
+													<span class="text-muted">- Imagen generada por la IA de un rostro aleatorio femenino, las imagenes generadas no poseen derechos de autor.</span>
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>												
+											</div>
+										</div>
+									</div>
+								</div>
+								<button type="button" name="button" id="clickme" class="btn btn-primary">Escuchar</button>
 						</div>
 					</div>
 				</div>
@@ -704,70 +744,55 @@
 			<section id="faq" class="faq section-bg">
 				<div class="container">
 					<div class="section-title">
-						<h2>Demostración de las API'S</h2>
+						<h2 class="text-uppercase">Empresas que ofrecen o emplean <b>IA</b> en el País</h2>						
 					</div>
 
 					<div class="row d-flex align-items-stretch">
 						<div class="col-lg-6 faq-item" data-aos="fade-up">
-							<h4>Face-api.js</h4>
+							<h4 class="text-uppercase">vertex studio</h4>
 							<p>
-								Explica un poco la API
+								Vertex Studio es una empresa productora tecnológica que ofrece desarrollo de juegos y simulacion actualmente se encuentran en un proyecto llamdo Construyendo nuestra #NuevaRealidadMixta.								
 							</p>
+							<div class="social">
+								<a href="https://vertexstudio.co/" target="_blank" rel="noopener noreferrer"><i class="icofont-web"></i></a>
+								<a href="https://www.facebook.com/vertexstudio.co" target="_blank" rel="noopener noreferrer"><i class="icofont-facebook"></i></a>
+							</div>
 						</div>
 
 						<div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="100">
-							<div>
-								<!-- COLOCA LA API-->
-								<div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="100">
-									<div>
-										<img src="assets/img/portfolio/proyecto-hellofresh-chat.png" alt="" width="100%" height="auto">
-									</div>
-								</div>
+							<h4 class="text-uppercase">spot</h4>
+							<p>
+								SPOT es una empresa de inteligencia artificial que da sentido al mundo físico. La misión de la compañía es conectar el mundo físico a la red en línea utilizando tecnología pionera de visión artificial e inteligencia artificial.	
+							</p>
+							<div class="social">
+								<a href="https://www.instagram.com/Spotcloud.io" target="_blank" rel="noopener noreferrer"><i class="icofont-instagram"></i></a>
+								<a href="https://www.facebook.com/SpotCloud.io" target="_blank" rel="noopener noreferrer"><i class="icofont-facebook"></i></a>
 							</div>
 						</div>
 
 						<div class="col-lg-6 faq-item" data-aos="fade-up">
-							<h4>Generated Photos</h4>
+							<h4 class="text-uppercase">Venalicium S.A. de C.V.</h4>
 							<p>
-								Las fotos generadas por la IA son imágenes versátiles que se pueden utilizar de forma segura
-								dado que son personas que no existen.
+								Empresa radicada en El Salvador, representa en Centro América y Panamá a Verbio, una de las compañías referentes a nivel mundial sobre la tecnología conversacional y que ha trabajado intensivamente en la Inteligencia artificial y redes neurales en el Reconocimiento de Voz y el Procesamiento de Lenguaje Natural, realizado importantes contribuciones e innovaciones en el campo del procesamiento de la señal, biometría de voz, reconocimiento de voz, síntesis de voz y sensores de voz.								
 							</p>
+							<div class="social">
+								<a href="http://inteligencia-artificiallatam.com" target="_blank" rel="noopener noreferrer"><i class="icofont-web"></i></a>								
+							</div>
 						</div>
 
 						<div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="100">
-							<div>
-								<img src="assets/img/portfolio/proyecto-hellofresh-chat.png" alt="" width="100%" height="auto">
-							</div>
-						</div>
-						<!-- <div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="100">
-							<img id="imagenGenerada" alt="imagen-generada">
-							<script>
-							async function getFace() {
-								let response = await fetch('https://api.generated.photos/api/v1/faces?per_page=1&gender=female&order_by=random',{
-								method: 'GET',
-								headers: {
-									'Authorization': 'API-Key XJREnllncxACZTxGLMiUsA'
-								}
-								});
-
-								let result = await response.json();
-								document.getElementById("imagenGenerada").src = result.faces[0].urls[4]["512"];
-							}
-							getFace();
-							</script>
-						</div> -->
-
-						<div class="col-lg-6 faq-item" data-aos="fade-up">
-							<h4>Face-api.js</h4>
+							<h4 class="text-uppercase">Sophia Business / ZENUM TECHNOLOGIES</h4>
 							<p>
-								Explica un poco la API
+								ZENUM TECHNOLOGIES es una empresa tecnológica que ofrece diferentes servicios relacionados con la inteligencia articial tales como inteligencia artificial potenciada a datos, servicios en la nube, blockchain y biometria, y cuentan con un centro de innovacion tecnolgia en relacion con suiza.								
 							</p>
+							<div class="social">
+								<a href="https://zenum.ai" target="_blank" rel="noopener noreferrer"><i class="icofont-web"></i></a>
+							</div>
 						</div>
 
-						<div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="100">
-							<div>
-								<img src="assets/img/portfolio/proyecto-hellofresh-chat.png" alt="" width="100%" height="auto">
-							</div>
+						<div class="col-lg-12 faq-item" data-aos="fade-up">
+							<h4>Ubicacion de las empresas</h4>
+							<div id="mapaEmpresas"></div>
 						</div>
 					</div>
 				</div>
@@ -806,8 +831,8 @@
 							</div>
 						</div>
 
-						<div class="col-lg-12" data-aos="fade-up" data-aos-delay="300">
-							<div id="map"></div>
+						<div class="col-lg-12 m-3" data-aos="fade-up" data-aos-delay="300">
+							<div id="mapaContactUs"></div>
 						</div>
 
 						<div class="col-lg-12" data-aos="fade-up" data-aos-delay="300">

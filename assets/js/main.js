@@ -456,15 +456,19 @@ $(window).on('load', function () {
 
 //#region API MAP
 
-//Proveedor de tileLayer
+//Creación del mapa.
+
 var base = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-			maxZoom: 17,
+			/* maxZoom: 17, */
 			attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
 });
 
-//Creación del mapa con el proveedor.
-var miMapa= L.map('map', {
-    layers: [base],
+var map = L.map('mapaEmpresas')
+.addLayer(base)
+.setView([13.6931124,-89.2839807], 12);
+
+
+var mapContact = L.map('mapaContactUs', {    // Mapa de Contactanos
     zoom: 16,
     fullscreenControl: true,
     fullscreenControlOptions: {
@@ -472,6 +476,11 @@ var miMapa= L.map('map', {
         titleCancel:"Salir"
     }
 });
+
+L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
+maxZoom: 18
+}).addTo(mapContact);
 
 //Funcion para centrar en el marcador
 function centerLeafletMapOnMarker(map, marker) {
@@ -482,7 +491,7 @@ function centerLeafletMapOnMarker(map, marker) {
 
 // Añadir control de escala
 var escala = L.control.scale({ position: 'bottomleft', metrical: false, maxWidth: 200});
-miMapa.addControl(escala);
+mapContact.addControl(escala);
 
 //Marcador Personalizado
 var blackIcon = new L.Icon({
@@ -495,18 +504,19 @@ var blackIcon = new L.Icon({
 });
 
 //Establecer marcador con doble clic
-miMapa.doubleClickZoom.disable();
+mapContact.doubleClickZoom.disable();
+map.doubleClickZoom.disable();
 
-miMapa.on('dblclick', e => {
-    let latLng = miMapa.mouseEventToLatLng(e.originalEvent);
-    L.marker([latLng.lat, latLng.lng]).addTo(miMapa)
+mapContact.on('dblclick', e => {
+    let latLng = mapContact.mouseEventToLatLng(e.originalEvent);
+    L.marker([latLng.lat, latLng.lng]).addTo(mapContact)
 });
 
 navigator.geolocation.getCurrentPosition(
     (pos) => {
         const { coords } = pos;
-		var gps = L.marker([coords.latitude, coords.longitude], {icon: blackIcon}).addTo(miMapa);
-		centerLeafletMapOnMarker(miMapa, gps);
+		var gps = L.marker([coords.latitude, coords.longitude], {icon: blackIcon}).addTo(mapContact);
+		centerLeafletMapOnMarker(mapContact, gps);
         gps.bindPopup("<center><b>MI UBICACIÓN</b><br>Ubicación Obtenida</>").openPopup();
     },
     (err) => {
@@ -520,10 +530,55 @@ navigator.geolocation.getCurrentPosition(
 )
 
 //Establecer marcador
-let marker = L.marker([13.6739956, -89.2788313],{icon: blackIcon}).addTo(miMapa);
 
+var markEmp1 = L.marker([13.7111843,-89.2537182], {
+  title: "marker_1",
+  icon: blackIcon
+}).addTo(map).bindPopup("<center><b>Vertex Studio</b><br>Calle Francisco Gavidia #8, Colonia Escalón").on('click', clickZoom);
+
+var markEmp2 = L.marker([13.7087235,-89.2469685], {
+  title: "marker_2",
+  icon: blackIcon
+}).addTo(map).bindPopup("<center><b>SPOT</b><br>1101 San Salvador, El Salvador").on('click', clickZoom);
+
+var markEmp3 = L.marker([13.669728,-89.2365416], {
+  title: "marker_3",
+  icon: blackIcon
+}).addTo(map).bindPopup("<center><b>VENALICIUM, S.A. DE C.V.</b><br>Avenida Tonatiu N10B, Calle Cumbre de Cuscatlán, Cumbre de Cuscatlán, Antiguo Cuscatlán").on('click', clickZoom);
+
+var markEmp4 = L.marker([13.7098645,-89.2441999], {
+	title: "marker_4",
+	icon: blackIcon
+}).addTo(map).bindPopup("<center><b>Sophia Business Inversiones</b><br>EDIFICIO VITTORIA, Calle El Mirador y 93 Av. Norte No. 4814, Planta Baja, Local S-2 Colonia Escalón, San Salvador, El Salvador.").on('click', clickZoom);
+
+function clickZoom(e) {
+	map.setView(e.target.getLatLng(),15);
+}
+
+var markers = [];
+markers.push(markEmp1);
+markers.push(markEmp2);
+markers.push(markEmp3);
+markers.push(markEmp4);
+
+function markerFunction(id) {
+  for (var i in markers) {
+    var markerID = markers[i].options.title;
+    var position = markers[i].getLatLng();
+    if (markerID == id) {
+    	map.setView(position, 15);
+      markers[i].openPopup();
+    };
+  }
+}
+
+$("a").click(function() {
+  markerFunction($(this)[0].id);
+});
+
+let marker = L.marker([13.6739956, -89.2788313],{icon: blackIcon}).addTo(mapContact);
 marker.bindPopup("<center><b>ITCA-FEPADE</b><br>La Escuela Especializada en Ingeniería ITCA Fepade está comprometida con la calidad académica y la pertinencia de nuestra oferta educativa.</>");
-var centrar = miMapa;
+var centrar = mapContact;
 
 centerLeafletMapOnMarker(centrar, marker);
 
@@ -531,4 +586,12 @@ centerLeafletMapOnMarker(centrar, marker);
 // URL PLUGIN FULLSCREEN http://brunob.github.io/leaflet.fullscreen
 // API DE GEOLOCALIZACION https://leafletjs.com/
 
+//#endregion
+
+//#region Modal de Generated Photos
+(function(){
+	$('mostrar-photos').on('click', function(){
+		$('#modal-photos').modal('show');
+	});
+}());
 //#endregion
