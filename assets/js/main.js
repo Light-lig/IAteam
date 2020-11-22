@@ -520,7 +520,7 @@ navigator.geolocation.getCurrentPosition(
         gps.bindPopup("<center><b>MI UBICACIÓN</b><br>Ubicación Obtenida</>").openPopup();
     },
     (err) => {
-        console.log(error);
+        console.log(err);
     },
     {
         enableHighAccuracy: true,
