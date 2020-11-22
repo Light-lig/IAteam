@@ -27,11 +27,11 @@ window.onload = () =>{
   startVideo();
 
   Promise.all([
-    faceapi.nets.tinyFaceDetector.loadFromUri("/assets/js/weights"),
-    faceapi.nets.faceLandmark68Net.loadFromUri("/assets/js/weights"),
-    faceapi.nets.faceRecognitionNet.loadFromUri("/assets/js/weights"),
-    faceapi.nets.faceExpressionNet.loadFromUri("/assets/js/weights"),
-    faceapi.nets.ageGenderNet.loadFromUri("/assets/js/weights")
+    faceapi.nets.tinyFaceDetector.loadFromUri("./assets/js/weights"),
+    faceapi.nets.faceLandmark68Net.loadFromUri("./assets/js/weights"),
+    faceapi.nets.faceRecognitionNet.loadFromUri("./assets/js/weights"),
+    faceapi.nets.faceExpressionNet.loadFromUri("./assets/js/weights"),
+    faceapi.nets.ageGenderNet.loadFromUri("./assets/js/weights")
   ]).then(startVideo);
 
 
